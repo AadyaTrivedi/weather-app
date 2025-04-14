@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background: #383737;
+}
+.card {
+  width: 95%;
+  max-width: 570px;
+  background: linear-gradient(165deg, #62bdfa, #186ca5, #053e64);
+  color: #fff;
+  margin: 250px auto 0 auto; 
+  border-radius: 20px;
+  padding: 50px 55px; 
+  text-align: center;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search input{
+  border:0;
+  outline:0; 
+  background: #ecebea;
+  color:#151515;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 30px;
+  font-size: 18px;
+  margin: 15px;
+}
+.search button{
+  border: 0;
+  outline: 0;
+  background: #f1f0f0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.search button img{
+  width: 18px;
+}
+.weather-icon{
+  width: 170px;
+  margin-top: 30px;
+}
+.weather h1{
+  font-size: 70px;
+  font-weight: 400px;
+}
+.weather h2{
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -5px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  padding: 0 20px;
+}
+.col {
+  display:flex;
+  align-items: center;
+gap:15px;
+flex: 1;
+padding: 100px;
+}
+.col div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.col img {
+  width: 40px;
+ line-height: 1.2;
+}
+
+.humidity, .wind {
+  font-size: 30px;
+  margin-top: 1px;
+  white-space: nowrap; 
+}
+.weather{
+  display: none;
+}
+.error{
+  text-align: center;
+  margin-left: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  display: none;
+}
+.spinner {
+  border: 4px solid;
+  border-top: 4px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 15s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in;
+}
+.fade-out{
+  animation: fadeOut 2s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.clear-btn{
+  border-radius: 20px;
+  width: 150px;
+  margin: 10px;
+  box-shadow: none;
+  border: 4px #053e64;
+  font-size: 16px;
+  cursor: pointer;
+}
+.geo-btn{
+  border-radius: 20px;
+  width: 150px;
+  margin: 10px;
+  box-shadow: none;
+  border:4px  #053e64;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+
+
